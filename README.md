@@ -1,4 +1,4 @@
-An interactive website built with HTML, CSS and JavaScript that allows teams to sign up to 4 players each during the transfer period.
+An interactive Fifa Transfer Window built with HTML, CSS and JavaScript that allows teams to sign up to 4 players each during the transfer period.
 
 ## Features
 
