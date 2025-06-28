@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Transfer Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="bame">
+        <h1>⚽ FIFA Transfer Window 2025</h1>
+
+    
+        <div class="team-selection">
+            <label for="teamSelect">Select Team:</label>
+            <select id="teamSelect">
+            
+            </select>
+        </div>
+
+      
+        <div class="team-info">
+            <h2 id="teamName">Team Name</h2>
+            <p>Budget: <span id="budget">100M</span></p>
+            <p>Transfers Remaining: <span id="transfersRemaining">4</span></p>
+        </div>
+    </div>
+
+    <
+    <div class="container">
+        
+        <div class="squad-container">
+         
+            <div class="transfer-list">
+                <h3>Transfer List</h3>
+                <div class="player-list" id="transferList">
+               
+                </div>
+            </div>
+
+           
+            <div class="squad">
+                <h3>New Signing</h3>
+                <ul id="currentSquad">
+                   
+                </ul>
+            </div>
+        </div>
+
+     
+        <div class="actions">
+            <button onclick="addPlayer()">Sign Player</button>
+            <button onclick="removePlayer()">Remove Player</button>
+        </div>
+    </div>
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>

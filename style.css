@@ -1,0 +1,150 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    height: 250vh; 
+    margin: 0;
+    background: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    color: #333;
+    position: relative;
+}
+
+
+.bame {
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    color: #333;
+    text-align: left;
+    z-index: 10;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    margin-left: 300px; 
+    margin-top: 20px; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2, h3 {
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.team-selection {
+    margin-bottom: 20px;
+}
+
+.team-selection select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.team-info {
+    margin-bottom: 20px;
+}
+
+.team-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.squad-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.squad, .transfer-list {
+    width: 48%;
+    max-width: 45%;
+}
+
+.squad ul, .transfer-list ul {
+    list-style-type: none; 
+    padding-left: 0; 
+    margin: 0;
+}
+
+.squad li, .transfer-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.actions button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .bame {
+        left: 20px;
+        width: 90%;
+        top: 20px;
+    }
+
+    .container {
+        margin-left: 20px; 
+    }
+
+    .squad-container {
+        flex-direction: column;
+    }
+
+    .squad, .transfer-list {
+        width: 100%;
+        max-width: none;
+    }
+
+    .actions button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
